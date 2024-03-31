@@ -1,0 +1,27 @@
+{
+  "name": "@diegosalasmartinez/tailwind-animations",
+  "version": "0.0.1",
+  "description": "Light custom Tailwind animations for your project",
+  "type": "module",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "vitest",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx --fix ."
+  },
+  "keywords": [],
+  "author": "Diego Alejandro Salas Martinez",
+  "license": "ISC",
+  "devDependencies": {
+    "@csstools/postcss-minify": "^1.1.1",
+    "postcss": "^8.4.38",
+    "standard": "17.1.0",
+    "tailwindcss": "3.4.3",
+    "vitest": "^1.4.0"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^3.0.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  }
+}
