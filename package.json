@@ -12,11 +12,11 @@
   "author": "Diego Alejandro Salas Martinez",
   "license": "ISC",
   "devDependencies": {
-    "@csstools/postcss-minify": "^1.1.1",
-    "postcss": "^8.4.38",
+    "@csstools/postcss-minify": "1.1.1",
+    "postcss": "8.4.38",
     "standard": "17.1.0",
     "tailwindcss": "3.4.3",
-    "vitest": "^1.4.0"
+    "vitest": "1.4.0"
   },
   "peerDependencies": {
     "tailwindcss": "^3.0.0"
