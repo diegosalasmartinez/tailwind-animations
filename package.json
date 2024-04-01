@@ -1,6 +1,6 @@
 {
   "name": "@diegosalasmartinez/tailwind-animations",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Light custom Tailwind animations for your project",
   "type": "module",
   "main": "./src/index.js",
