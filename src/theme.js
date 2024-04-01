@@ -1,6 +1,5 @@
 export default {
   animation: {
-    'background-shine': 'background-shine 2s linear infinite',
     'fade-in': 'fade-in 0.6s ease-in',
     'fade-out': 'fade-out 0.6s ease-out',
     'slide-in-top': 'slide-in-top 0.6s ease-out',
@@ -73,14 +72,6 @@ export default {
     'pulse-fade-in': 'pulse-fade-in 0.6s ease-out'
   },
   keyframes: {
-    'background-shine': {
-      from: {
-        backgroundPosition: '0 0'
-      },
-      to: {
-        backgroundPosition: '-200% 0'
-      }
-    },
     'fade-in': {
       '0%': { opacity: '0' },
       '100%': { opacity: '1' }
