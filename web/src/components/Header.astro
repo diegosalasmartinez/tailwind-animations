@@ -1,0 +1,23 @@
+---
+import GitHub from "@/icons/github.astro"
+import ToggleTheme from "./ToggleTheme.astro"
+import pkg from "../../../package.json"
+
+const { version } = pkg
+---
+
+<header
+  class="animate-fade-in-down animate-delay-500 pt-8 mb-2 flex items-center justify-center gap-x-2 *:text-xs"
+>
+  <ToggleTheme />
+  <div class="bg-black/10 px-2 py-1 rounded">v.{version}</div>
+  <a
+    aria-label="View website repository on GitHub"
+    href="https://github.com/diegosalasmartinez/tailwind-animations"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="transition-colors ease-in-out bg-black/10 px-2 py-1 rounded hover:bg-black/20 group"
+  >
+    <GitHub class="size-4 group-hover:scale-110" />
+  </a>
+</header>

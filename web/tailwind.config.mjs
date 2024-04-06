@@ -9,7 +9,17 @@ export default {
   darkMode: 'class',
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
-    extend: {}
+    extend: {
+      backgroundImage: {
+        hero: 'linear-gradient(to right, #8080800a 1px, transparent 1px), linear-gradient(to bottom, #8080800a 1px, transparent 1px)'
+      },
+      backgroundSize: {
+        degraded: '14px 24px'
+      },
+      boxShadow: {
+        'toggle-theme': '0 3px 10px rgb(0,0,0,0.2)'
+      }
+    }
   },
   plugins: [animations],
   safelist

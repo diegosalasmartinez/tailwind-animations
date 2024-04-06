@@ -2,7 +2,9 @@
 import Layout from "../layouts/Layout.astro"
 import theme from "../../../src/theme"
 import Installation from "@/components/Installation.astro"
-import ToggleTheme from "@/components/ToggleTheme.astro"
+import Header from "@/components/Header.astro"
+import Title from "@/components/Title.astro"
+import Footer from "@/components/Footer.astro"
 
 const animations = Object.entries(theme.animation).sort((a, b) =>
   a[0].localeCompare(b[0])
@@ -10,31 +12,21 @@ const animations = Object.entries(theme.animation).sort((a, b) =>
 ---
 
 <Layout title="Tailwind CSS Animations">
-  <main class="w-4/5 max-w-6xl mx-auto text-center mt-8">
-    <div
-      class="flex items-center justify-center gap-x-2 *:inline-flex *:relative *:items-center *:justify-center *:rounded *:bg-black/10 *:px-2 *:py-1 *:text-xs *:font-medium"
-    >
-      <ToggleTheme />
-    </div>
-
-    <h1 class="text-5xl font-bold">
-      <p class="animate-fade-in-down animate-duration-1000">
-        Tailwind CSS Animations
-      </p>
-    </h1>
-    <p class="mt-2">Beautiful animations ready to use for your project.</p>
-
+  <main class="w-4/5 max-w-6xl mx-auto text-center">
+    <Header />
+    <Title />
     <Installation />
 
     <section
-      class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 my-8"
+      class="animate-fade-in-up animate-delay-800 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 my-12"
     >
       {
         animations.map(([name]) => (
           <article
             class:list={[
               "flex flex-col items-center px-4 py-2 border-gray-200 border-[1px] rounded-lg",
-              "hover:border-gray-600 hover:cursor-pointer transition duration-500"
+              "hover:border-gray-600 hover:cursor-pointer transition duration-300",
+              "dark:border-gray-600 dark:hover:border-gray-400"
             ]}
             data-animation={name}
           >
@@ -44,6 +36,8 @@ const animations = Object.entries(theme.animation).sort((a, b) =>
         ))
       }
     </section>
+
+    <Footer />
   </main>
 </Layout>
 
