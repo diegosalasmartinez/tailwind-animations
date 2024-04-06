@@ -1,0 +1,49 @@
+---
+import { Code } from "astro:components"
+import CopyIcon from "@/icons/copy.astro"
+
+const npmPackageCode = `npm install @diegosalasmartinez/tailwind-animations`
+const tailwindConfigCode = `import animations from '@diegosalasmartinez/tailwind-animations'
+
+export default {
+    // ...rest of the options
+    plugins: [animations],
+}
+`
+---
+
+<div class="mx-auto mt-8 w-full max-w-[500px]">
+  <div class="text-left mt-4">
+    <span class="mb-1 text-xs font-semibold opacity-50"
+      >1. Install the dependency</span
+    >
+    <div
+      class="flex items-center justify-between gap-x-2 rounded-xl bg-[#1e1e1e] py-1 pl-4 pr-1 text-left text-white backdrop-blur"
+    >
+      <pre
+        class="flex text-xs">
+            <Code wrap={true} theme="dark-plus" code={npmPackageCode} />
+        </pre>
+      <button
+        id="copy-npm-install"
+        aria-label="Copy npm install command"
+        class="inline-flex size-7 items-center justify-center whitespace-nowrap rounded-full bg-white/10 text-sm font-medium transition-colors"
+      >
+        <CopyIcon />
+      </button>
+    </div>
+  </div>
+  <div class="text-left mt-4">
+    <span class="mb-1 text-xs font-semibold opacity-50"
+      >2. Add to your configuration</span
+    >
+    <div
+      class="flex w-full items-center justify-between gap-x-2 rounded-xl bg-[#1e1e1e] py-3 pl-4 pr-4 text-left text-white backdrop-blur"
+    >
+      <pre
+        class="flex text-xs">
+            <Code wrap={true} theme="dark-plus" lang="js" code={tailwindConfigCode} />
+        </pre>
+    </div>
+  </div>
+</div>
