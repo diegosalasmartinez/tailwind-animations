@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro"
 import theme from "../../../src/theme"
 import Installation from "@/components/Installation.astro"
+import ToggleTheme from "@/components/ToggleTheme.astro"
 
 const animations = Object.entries(theme.animation).sort((a, b) =>
   a[0].localeCompare(b[0])
@@ -10,6 +11,12 @@ const animations = Object.entries(theme.animation).sort((a, b) =>
 
 <Layout title="Tailwind CSS Animations">
   <main class="w-4/5 max-w-6xl mx-auto text-center mt-8">
+    <div
+      class="flex items-center justify-center gap-x-2 *:inline-flex *:relative *:items-center *:justify-center *:rounded *:bg-black/10 *:px-2 *:py-1 *:text-xs *:font-medium"
+    >
+      <ToggleTheme />
+    </div>
+
     <h1 class="text-5xl font-bold">
       <p class="animate-fade-in-down animate-duration-1000">
         Tailwind CSS Animations
