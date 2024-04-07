@@ -1,7 +1,10 @@
 # Tailwind CSS Animations
 
-A collection of beautifull animations ready to use for your project.
-![web](./lib/images/web.jpg)
+A collection of beautifull animations ready to use for your project. Visit the [website](https://tailwind-animations-gilt.vercel.app/) to get more information.
+
+![web](/lib/images/web.jpg)
+
+
 
 ## Installation :book:
 - npm
