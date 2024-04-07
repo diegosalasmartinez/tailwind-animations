@@ -5,8 +5,9 @@
   "type": "module",
   "main": "./src/index.js",
   "scripts": {
-    "test": "vitest",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx --fix ."
+    "lint": "standard ./src",
+    "lint:fix": "standard --fix ./src",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "Diego Alejandro Salas Martinez",
