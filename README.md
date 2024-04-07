@@ -1,6 +1,7 @@
 # Tailwind CSS Animations
 
 A collection of beautifull animations ready to use for your project.
+![web](./lib/images/web.jpg)
 
 ## Installation :book:
 - npm
